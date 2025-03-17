@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -63,7 +64,8 @@ dependencies {
     //Image loading
     implementation("io.coil-kt:coil-compose:2.4.0")
 
-
+    //navigation
+    implementation("androidx.navigation:navigation-compose:2.7.4")
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")

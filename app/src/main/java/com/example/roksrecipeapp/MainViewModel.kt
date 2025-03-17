@@ -1,5 +1,8 @@
 package com.example.roksrecipeapp
 
+import android.content.Context
+import android.net.ConnectivityManager
+import android.util.Log
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
@@ -13,7 +16,7 @@ class MainViewModel : ViewModel(){
     val categoriesState : State<RecipeState> = _categorieState
 
 
-    //moment the mainviewmodel is ever used - fecth the categories
+    //moment the mainviewmodel is ever used - fetch the categories
     init{
         fetchCategories()
     }
@@ -41,5 +44,6 @@ class MainViewModel : ViewModel(){
         val list: List<Category> = emptyList(),
         val error: String? = null
     )
+
 
 }
